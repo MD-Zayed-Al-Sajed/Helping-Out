@@ -1,0 +1,259 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.navbar .site-brand {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.navbar .site-brand span {
+    color: greenyellow;
+}
+
+.navbar .navbar-nav {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+}
+
+.navbar .nav-item {
+    margin-left: 20px;
+}
+
+.navbar .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    background-color: #28a745;
+}
+
+/* Header Styles */
+.services-header {
+    background: linear-gradient(to right, #66e9b7, #2bf53c, #97fae4); 
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services-header .header-title h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.services-header .header-title p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+/* Services Section */
+.services-section {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center; /* Center the text */
+}
+
+.services-section .title-wrap {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-section .lg-title {
+    font-size: 2.5em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.services-section .sm-title {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.services-section .services-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the row within the container */
+}
+
+.services-section .services-item {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 30px;
+    flex: 1 1 calc(33.333% - 40px); /* Adjust width and spacing */
+    max-width: calc(33.333% - 40px); /* Ensure max width */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-section .services-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+.services-section .services-icon {
+    font-size: 50px;
+    color: #28a745;
+}
+
+.services-section .services-item h3 {
+    margin: 20px 0 10px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.services-section .services-item p.text {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.services-section .services-item .btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.services-section .services-item .btn:hover {
+    background-color: #218838;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-item {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer .site-brand {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer .site-brand span {
+    color: #28a745;
+}
+
+.footer .text {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.footer h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer .social-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .social-links li {
+    margin-right: 10px;
+}
+
+.footer .social-links a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer .subscribe-form .form-control {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: calc(100% - 120px);
+    box-sizing: border-box;
+}
+
+.footer .subscribe-form .btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer .subscribe-form .btn:hover {
+    background-color: #218838;
+}
+
+/* Updated Link Styles */
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px; /* Added space between items */
+}
+
+.footer ul li a {
+    color: white; /* Change link color to white */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #28a745; /* Change color on hover */
+}
+
